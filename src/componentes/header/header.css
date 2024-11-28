@@ -11,6 +11,7 @@ header{
 }
 .nav-bar{
     position: fixed;
+    top: 0;
     width: 100vw;
     height: 10vh;
     color: white;
@@ -120,9 +121,6 @@ header{
     align-items: center;    
     justify-content: space-around;
 }
-.nav-bar_mobile{
-    display: none;
-}
 #SejaCatadorBTN_desktop{
     background-color: white;
     border-radius: 15px;
@@ -135,7 +133,7 @@ header{
     /* padding: 5px 15px; */
 }
 #SejaCatadorBTN_desktop:hover{color: rgb(235, 165, 14); background-color: black; transition: 0.5s;}
-
+.list_content_mobile{display: none;}
 .empresa_nome_mobile{display: none;}
 .icone{display: none;}
 /*responsividade*/
@@ -180,9 +178,11 @@ header{
         position: fixed;
         width: 100%;
         height: 10vh;
-        z-index: 3;
+        z-index: 100;
+        background-color: #63022d;
     }
     .list_content_mobile{
+        display: inline;
         margin-right: -60%;
         justify-items: start;
         background-color: #63022d;
@@ -190,7 +190,7 @@ header{
         right: 0;
         height: 99%;
         width: 50%;
-        z-index: 5;
+        z-index: 100;
         border: 3px solid rgb(255, 255, 255);
         border-radius:15px 0 0 15px;
     }
@@ -239,15 +239,19 @@ header{
         background-color: rgb(255, 255, 255);
     }
     /*nome empresa mobile;*/
-    .empresa_nome_mobile{height: 100%;width: 50%;
+    .empresa_nome_mobile{height: 100%;width: 100%;
         display: flex;
         justify-content: center;
-        z-index: 3;
+        align-items: center;
+        z-index: 90;
     }
     .empresa_nome_mobile a{height: 100%;
-    width: 100%;
+    width: 50%;
     align-content: center;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
     .empresa_nome_mobile a img{
         min-width: 160px;min-height: 8vh;

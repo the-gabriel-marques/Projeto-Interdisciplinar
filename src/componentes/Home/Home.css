@@ -3,11 +3,13 @@ main {
     width: 100vw;
     height: auto;
     overflow-x: hidden;
-
     display: block;
     justify-items: center;
 }
-
+.section_all{
+  width: 100vw;
+  height: auto;
+}
 /*tipos de titulo*/
 .titulo_home_page_tipo1 {
     text-align: center;

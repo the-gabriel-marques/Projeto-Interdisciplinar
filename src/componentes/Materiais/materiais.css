@@ -5,13 +5,17 @@
     margin-top: 20px;
     text-align: center;
 }
-
+.listaMateriais{
+    height: auto;
+    width: 100vw;
+    align-content: center;
+}
 .materialCatalogo h2{
     text-align: center;
     margin-bottom: 20px;
 }
 
-.materialCatalogo img{
+.img_materiais{
     height: 450px;
     width: 450px;
     border-radius: 20px;
@@ -23,7 +27,12 @@
 .materialCatalogo div{
     align-content: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+}
+.materialCatalogo div img{
+    width: 30%;
+    border-radius:20px ;
+    box-shadow: 0 5px 50px 0.1rem rgb(153, 59, 59);
 }
 
 .materialCatalogo p{
@@ -41,6 +50,55 @@
     margin-bottom: 20px;
 }
 
-.listaMateriais{
-    align-content: center;
+
+@media screen and (max-width:768px){
+    .listaMateriais{
+        width:99vw;
+        height: auto;
+        border: 1px solid red;
+    }
+    .materialCatalogo{
+        display: block;
+    }
+    .materialCatalogo div{
+        width: 100%;
+        height: auto;
+        display: block;
+        justify-items: center;
+        text-align: center;   
+    }
+   .materialCatalogo div img{
+    margin: 50px 5px;
+    display: block;
+    border-radius:15px;
+    box-shadow: 0 15px 10px 0.5rem rgb(99, 2, 45,0.5);
+    max-width: 400px;
+    width: 80%;height: 100%;max-height:300px;min-height: 250px;
+   }
+   .materialCatalogo div img:hover{
+    filter: grayscale(100%);
+    
+   }
+   .materialCatalogo p{
+    font-size: 2rem;
+   }
+   .animation{
+    animation: pulse 5s ease infinite;
+    transition: 1s;
+
+   }
+   @keyframes pulse {
+    0%{
+     transform: scale(100%);
+     transition: 5s;
+    }
+    50%{
+        transform: scale(102%);
+        background-color: black;
+    }
+    100%{
+        transform: scale(100%);
+
+    }
+   }
 }

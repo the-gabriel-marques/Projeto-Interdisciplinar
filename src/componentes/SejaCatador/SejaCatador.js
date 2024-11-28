@@ -1,10 +1,10 @@
+
 /*introdução para nova pagina*/
-const btn_SejaCatador_mobile= document.getElementById('SejaCatadorBTN_mobile')
-const btn_SejaCatador_desktop= document.getElementById('SejaCatadorBTN_desktop')
 
 function addContentSejaCatador(){
-    const main=document.getElementById('main')
-    main.innerHTML = `
+    const section_all=document.getElementById('section_all')
+    section_all.innerHTML = ''
+    section_all.innerHTML = `
         <section class="SejaCatador_Section">
           <article class="title_section_SejaCatador">
             <div class="title_SejaCatador"><h1>SEJA UM CATADOR PARCEIRO</h1></div>
@@ -33,9 +33,15 @@ function addContentSejaCatador(){
     `
 }
 
-
-btn_SejaCatador_mobile.addEventListener('click',()=>{
+const btn_SejaCatador_mobile = document.getElementById('SejaCatadorBTN_mobile')
+console.log(btn_SejaCatador_mobile)
+const btn_SejaCatador_desktop= document.getElementById('SejaCatadorBTN_desktop')
+btn_SejaCatador_mobile.addEventListener('click',(e)=>{
+  e.preventDefault()
+  // window.hash
     addContentSejaCatador()
+    console.log('funciiona')
+    
 })
 
 btn_SejaCatador_desktop.addEventListener('click',()=>{

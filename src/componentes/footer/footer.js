@@ -1,6 +1,8 @@
-const footer =document.getElementById('footer')
+
+export function BuildFooter(){
+const footer =document.createElement('div')
+footer.className = 'footer'
 footer.innerHTML =`
-        <div class="footer">
              <div class="footer-title">Siga @ratoroi</div>
              <div class="footer-content">
                 <div class="footer-item">
@@ -23,5 +25,6 @@ footer.innerHTML =`
                     <img src="./src/componentes/Home/img/icones/localizacao.png" alt="Localização icon">
                     R. Max Wilhelm, 674 - Sala 06 - Vila Baependi, Jaraguá do Sul - SC, 89256-000
                 </div>
-        </div>
         `
+        return footer;
+}
