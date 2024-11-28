@@ -50,7 +50,7 @@ content.innerHTML = `
                     <div class="esquerda_produto_desktop card">
                         <div class="produto_desktop_img flip">
                             <div class="front-card">
-                                <img src="/src/componentes/Home/primeiraTela/img/produtos/produto1.jpg" alt="m1">
+                                <img src="./src/componentes/Home/primeiraTela/img/produtos/produto1.jpg" alt="m1">
                             </div>
                             <div class="back-card">
                                 <img src="./src/componentes/Home/primeiraTela/img/produtos/produto2.jpg" alt="m2">
