@@ -1,0 +1,265 @@
+/*HEADER*/
+header{
+    max-height: 200vh;
+    width: 100vw;
+    height: 10vh;
+    background: linear-gradient(180deg, #63022d,#63022d);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    z-index: -1;
+}
+.nav-bar{
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    color: white;
+    display: flex;
+    background: linear-gradient(180deg, #63022d,#63022d);
+    z-index: 1000;
+}
+.nav-bar a{
+    color: white;
+}
+.empresa_nome{
+    width: 20%;
+    height: 100%;
+}
+.empresa_nome a{
+    width: 100%;
+}
+.empresa_nome a img{
+    width: 100%;
+    height: 100%;
+}
+.lista-navigation{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.lista_Conteudo{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-link{
+    position: relative;
+}
+.nav-link::after{
+    content: " ";
+    width: 0% ;
+    height: 2px;
+    background: linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0));
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    transition: 0.25s ease-in-out;
+}
+.nav-link:hover::after{
+    width: 100%;
+}
+
+#materiaisBotao{
+    position: relative;
+}
+
+#materiaisBotao::after{
+    content: " ";
+    width: 0% ;
+    height: 2px;
+    background: linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0));
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    transition: 0.25s ease-in-out;
+}
+
+#materiaisBotao:hover::after{
+    width: 100%;
+}
+
+#produtosBotao{
+   position: relative;
+}
+
+#produtosBotao::after{
+    content: " ";
+    width: 0% ;
+    height: 2px;
+    background: linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0));
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    transition: 0.25s ease-in-out;
+}
+
+#produtosBotao:hover::after{
+    width: 100%;
+}
+/* .lista-navigation ul .esquerda-header,.direita-header{
+    width: 40%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+} */
+.direita-header{
+    margin-right: 20px;
+}
+.lista-navigation ul{
+    width: 100%;
+    display: flex;
+    align-items: center;    
+    justify-content: space-around;
+}
+.nav-bar_mobile{
+    display: none;
+}
+#SejaCatadorBTN_desktop{
+    background-color: white;
+    border-radius: 15px;
+    border: none;
+    color: black;
+    height: 30px;
+    width: 150px;
+    padding: 5px 10px;
+    cursor: pointer;    
+    /* padding: 5px 15px; */
+}
+#SejaCatadorBTN_desktop:hover{color: rgb(235, 165, 14); background-color: black; transition: 0.5s;}
+
+.empresa_nome_mobile{display: none;}
+.icone{display: none;}
+/*responsividade*/
+@media screen and (max-width:768px){
+    header{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .nav-bar{display: none;}
+    /*ICONE*/
+    .icone{
+        display: inline;
+        padding: 5px;
+        background-color: #63022d;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        height: 10vh;
+        width: 10vh;
+        display: block;
+        justify-items: center;
+        align-content: center;
+        margin: 2px 5px;
+        z-index: 5;
+        cursor: pointer;
+        border-radius: 15px;
+        border: 3px solid white;
+    }
+    .line{
+        margin:5px 0;
+        width: 100%;
+        height: 4px ;
+        background-color: rgb(255, 255, 255);
+        border-radius: 15px;
+        border: 1px solid white;
+    }
+    .line:focus{color: gold;}
+    /*nav-mobile*/
+    .nav-bar_mobile{
+        display: flex;
+        position: fixed;
+        width: 100%;
+        height: 10vh;
+        z-index: 3;
+    }
+    .list_content_mobile{
+        margin-right: -60%;
+        justify-items: start;
+        background-color: #63022d;
+        position: fixed;
+        right: 0;
+        height: 99%;
+        width: 50%;
+        z-index: 5;
+        border: 3px solid rgb(255, 255, 255);
+        border-radius:15px 0 0 15px;
+    }
+    .list_content{width: 100%;
+    display: block;
+    }
+    .list_content_mobile a{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border: 3px solid white;
+    }
+    .list_content_mobile button{
+        background: transparent;
+        border: 3px solid white;
+        height: 50px;
+        width: 100%;
+        color: white;
+        font-size: 1rem;
+    }
+/*icone_fechar*/
+    .icone_fechar{
+        cursor: pointer;
+        height: 8vh;
+        width: 8vh;
+        position: relative;
+        overflow: hidden;
+        align-content: center;
+        margin: 10px;
+        border: 2px solid white
+    }
+    .line1{
+        position: absolute;
+        top: 40%;
+        transform: rotate(45deg);
+        background-color: rgb(255, 255, 255);
+        border: 1px solid white;
+    }
+    .line2{
+        border: 1px solid white;
+        position: absolute;
+        top: 40%;
+        transform: rotate(135deg);
+        background-color: rgb(255, 255, 255);
+    }
+    /*nome empresa mobile;*/
+    .empresa_nome_mobile{height: 100%;width: 50%;
+        display: flex;
+        justify-content: center;
+        z-index: 3;
+    }
+    .empresa_nome_mobile a{height: 100%;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+}
+    .empresa_nome_mobile a img{
+        min-width: 160px;min-height: 8vh;
+        width: 25%;height: 8vh;
+    }
+
+    #SejaCatadorBTN_mobile{
+        width: 100%;
+        height: 50px;
+        background-color: transparent;
+        color: white;
+        font-weight: 600;
+        border: 3px solid white;
+    }
+}
