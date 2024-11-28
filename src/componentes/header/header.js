@@ -11,7 +11,7 @@ export function BuildHeader(){
                     <a href="#materiais" id="materiaisBotao_mobile">Materiais</a>
                     <a href="#produtos" id="produtosBotao_mobile">Produtos</a>
                     <a href="#producao-section" id="producao">Produção</a>
-                    <a href="#dados-section" id="dados">Produção</a>
+                    <a href="#dados-section" id="dados">Dados</a>
                     <button id="SejaCatadorBTN_mobile">Seja um Associado</button>
                     </div>
                 </div>
