@@ -38,7 +38,6 @@ function addContentMateriais(){
             </div>
                 <p>Painéis de decoração fragmentos, revestimentos feitos 100% com resíduos plásticos pós-industriais e pós-consumo.</p>
             </ul>
-            </div>
             <br>
             <div class="line"></div>
             <br>
